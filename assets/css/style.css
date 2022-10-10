@@ -19,7 +19,7 @@ body{
     background: #fff;
     font-family: 'Roboto', sans-serif;
     font-size: 16px;
-    height: 100vh;
+    /* height: 100vh; */
 }
 
 /* Navigasi */
@@ -73,6 +73,7 @@ a.active, li:hover a{
 }
 
 a{
+    color: #5027f5;
     text-decoration: none
 }
 
@@ -98,6 +99,7 @@ img {
     padding: 5px 0;
     font-family: 'Roboto', sans-serif;
     font-weight: 500;
+    /* min-height: 100vh; */
 }
 
 .heading{
@@ -191,6 +193,15 @@ h3{
 
 }
 
+#portofolio .col-4{
+    flex-basis: none;
+}
+
+#portofolio .card-body{
+    display: block;
+    text-align: center;
+}
+
 .card {
 
     width: 270px;
@@ -204,14 +215,7 @@ h3{
     box-shadow: #80808063 0px 6px 25px 1px;
 }
 
-#portofolio .col-4{
-    flex-basis: none;
-}
 
-#portofolio .card-body{
-    display: block;
-    text-align: center;
-}
 
 .card-body{
     padding: 0;
@@ -222,8 +226,9 @@ h3{
 
 
 .card-img{
-    background-color: transparent;
+    background-color: red;
     height: 200px;
+    overflow: hidden;
     width: 100%;
     display: block;
     
@@ -233,8 +238,9 @@ h3{
     height: 100%;
     border-radius: 20px;
     display: block;
+    
     /* border-radius: 50%; */
-    object-fit:none;
+    object-fit:contain;
     
 }
 
@@ -304,7 +310,7 @@ h3{
 
 .judul-blog{
     font-size: 36px;
-    font-weight: 800;
+    font-weight: bold;
     margin: 12px 0;
     position: relative;
     
@@ -327,4 +333,5 @@ h3{
 .p-blog{
     color:rgb(31, 31, 31);
     margin: 21px 0px;
-}   
+}
+
